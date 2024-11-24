@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta Producto</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <br><br>
+        <h1>La Guadalupana</h1>
+        <br><br>
+        
+        <nav>
+            <ul class="lista">
+                <li><a href="#">Altas</a>
+                    <ul>
+                        <li><a href="altaMarca.html">Marca</a></li>
+                        <li><a href="altaCategoria.html">Categoria</a></li>
+                        <li><a href="altaProducto.html">Producto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Modificar y Eliminar</a>
+                    <ul>
+                        <li><a href="modificarMarca.php">Marca</a></li>
+                        <li><a href="modificarCategoria.php">Categoria</a></li>
+                        <li><a href="modificarProducto.php">Producto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Consultas</a>
+                    <ul>
+                        <li><a href="consultaMarca.php">Marca</a></li>
+                        <li><a href="consultaCategoria.php">Categoria</a></li>
+                        <li><a href="consultaProducto.php">Producto</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Pagina Principal</a></li>
+            </ul>
+        </nav>
+        
+        <br><br>
+        <font color="red">
+        <h2>ALTA PRODUCTO</h2>
+        <br>
+        </font>
+
+        <form id="form1" method="POST" action="altaProducto.php">
+            <table border="1" width="100%">
+                <tr>
+                    <td>idProducto:</td>
+                    <td>idCategoria:</td>
+                    <td>idMarca:</td>
+                    <td>Nombre:</td>
+                    <td>Precio:</td>
+                    <td>Descripcion:</td>
+                    <td>Novedad:</td>
+                    <td>Vendido:</td>
+                    <td>Imagen:</td>
+                </tr>
+
+                <tr>
+                    <td><input type="number" name="idProducto"></td>
+                    <td><input type="number" name="idCategoria"></td>
+                    <td><input type="number" name="idMarca"></td>
+                    <td><input type="text" name="nombre"></td>
+                    <td><input type="number" name="precio"></td>
+                    <td><input type="text" name="descripcion"></td>
+                    <td><input type="text" name="novedad"></td>
+                    <td><input type="text" name="vendido"></td>
+                    <td><input type="file" name="imagen"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="9" align="center">
+                        <input type="submit" value="Alta">
+                        <input type="reset" value="Limpiar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

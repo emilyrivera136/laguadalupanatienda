@@ -1,0 +1,150 @@
+*{ /*Selector general*/
+	padding:0px;
+	margin:0px;
+	}
+
+html{
+	background:white;
+}
+
+body{
+	height: 630px;/*pixeles de alto*/
+	width: 750px;/*pixeles de ancho*/
+	background:white;
+	margin: auto;/*lo pone automático en el centro*/
+	margin-top:50px;/*margen en la parte superior*/
+}
+
+header{
+	height:130px;
+	width:750px;
+	background:white;
+}
+
+#banner{
+	height:130px;
+	width:620px;
+	background: #7EC4CF;
+	float:right;
+	text-align:center;
+	line-height: 140px;
+	color:white;
+}
+
+#logo{
+	width:130px;
+	height: 130px;
+}
+
+nav{
+	height: 50px; /*pixeles de alto*/
+	/*ya no necesito ponerle px de ancho porque al body se lo especifique*/
+	background: #E7D8C9;
+}
+
+nav ul{
+	list-style:none;
+	text-align:center;
+	line-height:50px;
+}
+
+ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.nav li a{
+	text-decoration:none;
+	color:white;
+}
+
+.nav > li{
+	float:left;
+}
+
+.nav li ul{
+	display:none;
+	position:absolute;
+	min-width:50px;
+}
+
+.nav li:hover > ul{
+	display:block;
+	color:white;
+}
+
+.nav li ul li{
+	position:relative;
+	top:1px;
+}
+
+main{
+	height:400px;
+	width:750px;
+	background: white;
+}
+
+article{
+	width:500px;
+	height:400px;
+	background:#7EC4CF;
+	float: left;
+	line-height:30px;
+}
+
+table{
+	margin:50px 110px;
+	table-layout:fixed;
+	width:305px;
+}
+
+thead{
+	background:#E6BEAE;
+	color:white;
+	font-weight:bold;
+}
+
+tfoot{
+	background:#E89645;
+	color:white;
+	font-weight:bold;
+}
+
+aside{
+	height:400px;
+	width:250px;
+	background:#E6BEAE;
+	float:left;
+	text-align:center;
+	font-family:Comic Sans MS;
+	font-weight: bold;
+	font-size: large;
+	line-height:40px;
+	line-height:55px;
+	color:white;
+}
+
+footer{
+	height:50px;
+	background: #E7D8C9;
+	
+	nav ul{
+		list-style:none;
+		text-align:center;
+		line-height:50px;
+		float:right;
+	}
+
+	ul li{
+		display: inline-block;
+		margin: 0px 15px;
+		}
+
+	li a{
+		text-decoration:none;
+	}
+
+	nav a{
+		color:white;
+	}
+}

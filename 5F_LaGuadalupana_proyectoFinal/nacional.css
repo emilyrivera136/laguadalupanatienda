@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background:#7EC4CF;
+}
+table{
+	width:305px;
+}
+caption{
+	color:white;
+}
+thead{
+	background:#E7D8C9;
+	color:white;
+	font-weight:bold;
+}
+tbody{
+	background:#E6BEAE;
+	color:white;
+	font-weight:bold;
+}
